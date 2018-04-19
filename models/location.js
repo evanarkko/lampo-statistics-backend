@@ -7,11 +7,7 @@ const Location = mongoose.model("Location", {
         required: true
     },
     lat: String,
-    long: String,
-    readings: [{
-        type: mongoose.Schema.ObjectId,
-        ref: 'Reading'
-    }]
+    long: String
 })
 
 module.exports = Location

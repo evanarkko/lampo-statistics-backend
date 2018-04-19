@@ -1,16 +1,18 @@
 const mongoose = require('mongoose')
 require('mongoose-long')(mongoose)
 
+/*Readingin ja locationin kytkentä hyvin löyhä*/
+
 const Reading = mongoose.model('Reading', {
-    location: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Location'
+    locationName: {
+        type: String,
+        required: true
     },
     temperature: {
         type: Number,
         required: true
     },
-    time: {
+    timeStamp: {
         type: Number,
         required: true
     }

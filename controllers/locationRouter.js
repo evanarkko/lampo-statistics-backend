@@ -76,8 +76,11 @@ let mockLocations = [
     }
 ]
 
-locationRouter.get('/', (req, res) => {
-    console.log('get call')
+locationRouter.get('/', async (req, res) => {
+    const queryResults = await Location.find({})
+    console.log(queryResults)
+    /*for each entry    */
+
     res.json(mockLocations)
 })
 
@@ -93,7 +96,7 @@ locationRouter.post('/', (req, res) => {
             long: body.long,
             readings: []
         })
-
+        console.log('attempting location save')
         location.save()
 
         res.status(200)
