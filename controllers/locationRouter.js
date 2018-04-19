@@ -1,4 +1,5 @@
 const locationRouter = require('express').Router()
+const Location = require('../models/location')
 
 let mockLocations = [
     {
@@ -79,5 +80,27 @@ locationRouter.get('/', (req, res) => {
     console.log('get call')
     res.json(mockLocations)
 })
+
+locationRouter.post('/', (req, res) => {
+    try {
+        console.log('post call')
+        const body = req.body
+        console.log(body)
+
+        const location = new Location({
+            name: body.name,
+            lat: body.lat,
+            long: body.long,
+            readings: []
+        })
+
+        location.save()
+
+        res.status(200)
+    } catch (e) {
+
+    }
+})
+
 
 module.exports = locationRouter
