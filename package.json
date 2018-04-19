@@ -1,0 +1,24 @@
+{
+  "name": "lampo-statistics-backend",
+  "version": "1.0.0",
+  "description": "Temperature reading backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanarkko/lampo-statistics-backend.git"
+  },
+  "keywords": [
+    "statistics",
+    "temperature",
+    "reaktor"
+  ],
+  "author": "Evan Miller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evanarkko/lampo-statistics-backend/issues"
+  },
+  "homepage": "https://github.com/evanarkko/lampo-statistics-backend#readme"
+}
