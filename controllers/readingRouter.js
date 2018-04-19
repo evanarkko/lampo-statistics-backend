@@ -17,18 +17,6 @@ readingRouter.post('/', async (req, res) => {
 
         await reading.save()
 
-        let updatedFields = {
-            latest: {
-                temp: 284.15,
-                added: ''
-            },
-            recent: {
-                high: 286.15,
-                low: 280.15,
-                avg: 283.65
-            }
-        }
-
         res.status(201).json(newReading)
 
     } catch (e) {

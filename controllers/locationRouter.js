@@ -1,20 +1,12 @@
 const locationRouter = require('express').Router()
 const Location = require('../models/location')
+const readingService = require('../logic/readingService')
 
 let mockLocations = [
     {
         name: 'Tokyo',
         lat: 35.658,
-        long: 139.733,
-        latest: {
-            temp: 284.15,
-            added: ''
-        },
-        recent: {
-            high: 286.15,
-            low: 280.15,
-            avg: 283.65
-        }
+        long: 139.733
     }
     ,
     {
@@ -24,11 +16,6 @@ let mockLocations = [
         latest: {
             temp: 284.15,
             added: ''
-        },
-        recent: {
-            high: 286.15,
-            low: 280.15,
-            avg: 283.65
         }
     },
     {
@@ -77,11 +64,33 @@ let mockLocations = [
 ]
 
 locationRouter.get('/', async (req, res) => {
-    const queryResults = await Location.find({})
-    console.log(queryResults)
-    /*for each entry    */
+    let clientQueue = []
+    let sendToCli = {}
 
-    res.json(mockLocations)
+    const queryResults = await Location.find({})
+    const formattedResults = queryResults.map(Location.format)
+
+    console.log(formattedResults)
+
+    formattedResults.forEach(async (location) => {
+        clientQueue = clientQueue.concat({
+            name: location.name,
+            lat: location.lat,
+            long: location.long,
+            latest: {temp: 285, added: 'yesterday'}
+        })
+    })
+
+
+
+    /*console.log(readingService.latestReading(await readingService.allReadingsByLocationName(location.name)))*/
+    /*for entry (name)
+        * getReadingsbylocationname
+         * return  latest: {temp: val, added: timeStamp}
+         * get "within 24h" subgroup
+         *  return recent: {hi, lo, avg}*/
+
+    res.json(mockLocations.concat(clientQueue))
 })
 
 locationRouter.post('/', (req, res) => {
