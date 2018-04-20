@@ -1,7 +1,9 @@
 const mongoose = require('mongoose')
 require('mongoose-long')(mongoose)
 
-/*Readingin ja locationin kytkentä hyvin löyhä*/
+/*
+Readingin ja locationin kytkentä hyvin löyhä
+*/
 
 const readingSchema = new mongoose.Schema({
     locationName: {
