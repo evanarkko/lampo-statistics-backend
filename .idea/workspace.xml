@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8e7ad2f-7b8f-4229-b462-069428a2d841" name="Default" comment="" />
+    <list default="true" id="f8e7ad2f-7b8f-4229-b462-069428a2d841" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/asset-manifest.json" afterPath="$PROJECT_DIR$/build/asset-manifest.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/index.html" afterPath="$PROJECT_DIR$/build/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/service-worker.js" afterPath="$PROJECT_DIR$/build/service-worker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/readingRouter.js" afterPath="$PROJECT_DIR$/controllers/readingRouter.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -44,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readingRouter.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="readingRouter.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/readingRouter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+            <state relative-caret-position="581">
+              <caret line="49" column="63" lean-forward="false" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -64,7 +70,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="486">
@@ -102,10 +108,10 @@
         <option value="$PROJECT_DIR$/logic/arithmeticDateLogic.js" />
         <option value="$PROJECT_DIR$/logic/readingService.js" />
         <option value="$PROJECT_DIR$/logic/arithmeticLogic.js" />
-        <option value="$PROJECT_DIR$/controllers/readingRouter.js" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/controllers/locationRouter.js" />
         <option value="$PROJECT_DIR$/models/reading.js" />
+        <option value="$PROJECT_DIR$/controllers/readingRouter.js" />
       </list>
     </option>
   </component>
@@ -206,12 +212,12 @@
       <option name="presentableId" value="Default" />
       <updated>1524143207713</updated>
       <workItem from="1524143208893" duration="23156000" />
-      <workItem from="1524207677963" duration="9364000" />
+      <workItem from="1524207677963" duration="9488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32520000" />
+    <option name="totallyTimeSpent" value="32644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -372,14 +378,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/readingRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logic/arithmeticLogic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
@@ -404,6 +402,14 @@
             <marker date="1524214743043" expanded="true" signature="145:204" ph="{&quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;...}" />
             <marker date="1524214743043" expanded="true" signature="902:907" ph="{&quot;body-parser&quot;: &quot;^1.18.2&quot;...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/readingRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="49" column="63" lean-forward="false" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>

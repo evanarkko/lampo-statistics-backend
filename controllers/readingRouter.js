@@ -47,7 +47,7 @@ readingRouter.get('/structured/:name', async (req, res) => {
     let latest = mostRecent ?
         {
             temp: mostRecent.temperature,
-            added: new Date(mostRecent.timeStamp).toDateString()
+            added: new Date(mostRecent.timeStamp).toUTCString()
         } :
         null
 
