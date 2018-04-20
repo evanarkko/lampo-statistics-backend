@@ -17,9 +17,9 @@ app.use('/api/readings', readingRouter)
 app.use(express.static('build'))
 
 const server = http.createServer(app)
-const PORT = process.env.port || 3001
+const PORT = process.env.PORT || 3001
 
-server.listen(PORT, process.argv[2], () => {
+server.listen(PORT, () => {
     console.log(`server running on port ${PORT}`)
 })
 
