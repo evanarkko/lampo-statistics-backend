@@ -8,7 +8,7 @@ const locationRouter = require('./controllers/locationRouter')
 const readingRouter = require('./controllers/readingRouter')
 require('dotenv').config()
 
-mongoose.connect('mongodb://lordevan7:yu6uahea@ds147459.mlab.com:47459/lampo_readings')
+mongoose.connect(process.env.MONGODB_URI)
 mongoose.Promise = global.Promise
 
 app.use(cors())
