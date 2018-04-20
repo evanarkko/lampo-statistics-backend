@@ -19,7 +19,7 @@ app.use(express.static('build'))
 const server = http.createServer(app)
 const PORT = process.env.port || 3001
 
-server.listen(PORT, () => {
+server.listen(PORT, process.argv[2], () => {
     console.log(`server running on port ${PORT}`)
 })
 
