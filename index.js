@@ -15,6 +15,7 @@ app.use(cors())
 app.use(bodyParser.json())
 app.use('/api/locations', locationRouter)
 app.use('/api/readings', readingRouter)
+app.use(express.static('build'))
 
 const server = http.createServer(app)
 const PORT = process.env.port || 3001
