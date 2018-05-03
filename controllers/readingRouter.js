@@ -21,6 +21,7 @@ readingRouter.post('/', async (req, res) => {
 
         res.status(201).json(reading.format)
     } catch (e) {
+        res.status(500)
     }
 })
 

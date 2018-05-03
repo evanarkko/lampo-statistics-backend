@@ -26,7 +26,7 @@ locationRouter.post('/', (req, res) => {
 
         res.status(200)
     } catch (e) {
-
+        res.status(500)
     }
 })
 
